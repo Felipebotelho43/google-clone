@@ -7,7 +7,7 @@ function randomImage() {
 }
 
 document.addEventListener("DOMContentLoaded", async function() {
-  const raw = await fetch("http://jsonplaceholder.typicode.com/posts");
+  const raw = await fetch("https://jsonplaceholder.typicode.com/posts");
   const res = await raw.json();
 
   for (let i = 0; i < res.length; i++) {
