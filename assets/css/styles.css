@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  width: 100%;
+  max-width: 240px;
+  padding: 1rem;
+
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223,225,229,0);
+}
+  .card:first-child {
+    display: none;
+  }
+
+.card h3, .card p {
+  margin: 0;
+}
